@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - login_help
+  - reset_password
+  - no_password_received
+  - new_partner
+  - place_order
+  - check_approval
+  - dispatch_info
+  - return_device
+  - contact_support
+
+responses:
+  # --- Small talk / meta ---
+  utter_greet:
+    - text: "Hi! I’m AIVA, your Airtel Assistant. How can I help you today?"
+  utter_goodbye:
+    - text: "Goodbye! 👋 If you need anything else, just say hi."
+  utter_affirm:
+    - text: "Great! How else can I help?"
+  utter_deny:
+    - text: "No problem. What would you like to do next?"
+  utter_iamabot:
+    - text: "I’m AIVA, an automated Airtel assistant here to help."
+
+  # --- Airtel/uSDM help texts ---
+  utter_login_help:
+    - text: "Do you have your User ID and Password for the uSDM portal?"
+  utter_reset_password:
+    - text: "Click 'Forgot Password' on the login page, enter your User ID, and click 'Save'."
+  utter_no_password_received:
+    - text: "Check your spam/junk folder. If nothing arrived by email/SMS, try 'Forgot Password' again and confirm your User ID is correct."
+  utter_new_partner:
+    - text: "If you’re a new partner, request your uSDM User ID from your Airtel account manager or the partner onboarding team."
+  utter_place_order:
+    - text: "Log in to uSDM, select HBB Device Dealer Responsibility, and fill in the order form."
+  utter_check_approval:
+    - text: "Go to Order History in uSDM and check the approval status."
+  utter_dispatch_info:
+    - text: "Orders can be self-collected or couriered based on your preference."
+  utter_return_device:
+    - text: "Go to Stock Return Order Entry in uSDM and submit the return request."
+  utter_contact_support:
+    - text: "Email: SalesPartnerSupport@ke.airtel.com or Homebroadband@ke.airtel.com"

@@ -1,0 +1,118 @@
+version: "3.1"
+
+nlu:
+
+# -------- Small talk / meta --------
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - hello there
+    - hey there
+    - good morning
+    - good afternoon
+    - good evening
+    - habari
+    - mambo
+    - hi aiva
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - talk to you later
+    - thanks bye
+    - asante, bye
+
+- intent: affirm
+  examples: |
+    - yes
+    - yeah
+    - yup
+    - sure
+    - correct
+    - that's right
+    - i'm fine
+    - im fine
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - not really
+    - nah
+    - don't think so
+    - no help
+    - i don't need help
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot
+    - am I chatting with a human
+    - who am I talking to
+    - is this automated
+
+# -------- Core support intents --------
+- intent: login_help
+  examples: |
+    - I can't log in
+    - can't login
+    - login help
+    - help me log in
+    - how do I access uSDM
+    - how do I log into usdm
+    - nisaidie kuingia kwenye uSDM
+    - I'm locked out of uSDM
+    - my uSDM login isn't working
+    - I need help with sign in
+    - usdm access issues
+
+- intent: reset_password
+  examples: |
+    - forgot password
+    - I forgot my password
+    - reset my password
+    - how do I reset the password
+    - I don't have my password
+    - nimeisahau password
+    - password reset for uSDM
+    - change my uSDM password
+
+- intent: no_password_received
+  examples: |
+    - I didn’t get the password
+    - I didn't receive the password email
+    - no password SMS received
+    - I never got the reset link
+    - hakuna email ya password
+    - still waiting for the password message
+    - no reset link came through
+
+- intent: new_partner
+  examples: |
+    - I'm a new partner
+    - I need login credentials
+    - how do new partners get a User ID
+    - I just joined, how do I access uSDM
+    - ninawezaje kupata User ID
+    - new partner onboarding
+
+- intent: place_order
+  examples: |
+    - I want to place an order
+    - how do I order a device
+    - place order for EBB
+    - where can I submit an order
+    - nitawekaje order ya device
+    - order process on uSDM
+    - can I place an order now
+
+- intent: check_approval
+  examples: |
+    - check order approval
+    - is my order approved
+    - approval status of my order
+    - has my request been approved
+    - where do I s

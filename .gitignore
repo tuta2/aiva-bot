@@ -1,0 +1,14 @@
+# Python venv + cache
+.venv/
+__pycache__/
+*.pyc
+
+# Rasa artifacts
+models/
+results/
+events.out
+
+# Local secrets
+credentials.yml
+endpoints.yml.local
+.env

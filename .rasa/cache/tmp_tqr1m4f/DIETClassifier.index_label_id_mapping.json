@@ -1,0 +1,18 @@
+{
+  "0": "affirm",
+  "1": "bot_challenge",
+  "2": "check_approval",
+  "3": "contact_support",
+  "4": "deny",
+  "5": "dispatch_info",
+  "6": "goodbye",
+  "7": "greet",
+  "8": "login_help",
+  "9": "mood_great",
+  "10": "mood_unhappy",
+  "11": "new_partner",
+  "12": "no_password_received",
+  "13": "place_order",
+  "14": "reset_password",
+  "15": "return_device"
+}

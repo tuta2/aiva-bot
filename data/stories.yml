@@ -1,0 +1,75 @@
+version: "3.1"
+
+stories:
+
+# --- Simple greetings ---
+- story: greet only
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+# --- Multi-turn: greet -> specific help paths ---
+- story: greet then login help
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: login_help
+    - action: utter_login_help
+
+- story: greet then reset password
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: reset_password
+    - action: utter_reset_password
+
+- story: greet then place order
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: place_order
+    - action: utter_place_order
+
+# --- Typical follow-ups ---
+- story: login help -> no password received
+  steps:
+    - intent: login_help
+    - action: utter_login_help
+    - intent: no_password_received
+    - action: utter_no_password_received
+
+- story: new partner onboarding
+  steps:
+    - intent: new_partner
+    - action: utter_new_partner
+    - intent: login_help
+    - action: utter_login_help
+
+# --- Order lifecycle queries ---
+- story: place order -> check approval -> dispatch info
+  steps:
+    - intent: place_order
+    - action: utter_place_order
+    - intent: check_approval
+    - action: utter_check_approval
+    - intent: dispatch_info
+    - action: utter_dispatch_info
+
+# --- Returns and support ---
+- story: return device then contact support
+  steps:
+    - intent: return_device
+    - action: utter_return_device
+    - intent: contact_support
+    - action: utter_contact_support
+
+# --- Small talk / meta ---
+- story: say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
