@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Global Styles */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; }
+
+/* WhatsApp Chat Bubble Effect */
+.whatsapp-bubble {
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 75%;
+}
+
+.whatsapp-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+/* Chat Background Pattern */
+.bg-chat-pattern {
+  background-image: url('../images/pattern-2.webp');
+  background-size: cover;
+  background-blend-mode: overlay;
+}
